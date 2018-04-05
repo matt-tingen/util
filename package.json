@@ -1,0 +1,13 @@
+{
+  "name": "@matt-tingen/util",
+  "version": "0.1.0",
+  "repository": "git@github.com:matt-tingen/util.git",
+  "author": "Matt Tingen <matt.tingen@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^2.8.1"
+  }
+}
