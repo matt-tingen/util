@@ -5,9 +5,11 @@
   "author": "Matt Tingen <matt.tingen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "yarn build && ava"
   },
   "dependencies": {
+    "ava": "^0.25.0",
     "typescript": "^2.8.1"
   }
 }
