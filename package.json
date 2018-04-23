@@ -5,8 +5,10 @@
   "author": "Matt Tingen <matt.tingen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "test": "yarn build && ava"
+    "clean": "rm -rf dist",
+    "build": "yarn clean && tsc -p config/dist.json",
+    "build-test": "yarn clean && tsc -p config/test.json",
+    "test": "yarn build-test && ava"
   },
   "dependencies": {
     "ava": "^0.25.0",
