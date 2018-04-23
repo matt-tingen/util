@@ -1,10 +1,10 @@
 import identity from './identity';
 
-function countBy<T>(items: T[], by: (value: T) => any = identity) {
+function countBy<T>(items: T[], iteree: (value: T) => any = identity) {
   const counts: { [value: string]: number } = {};
 
   items.forEach(item => {
-    const value = by(item);
+    const value = iteree(item);
 
     if (!counts[value]) {
       counts[value] = 0;
