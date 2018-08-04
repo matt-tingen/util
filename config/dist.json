@@ -1,4 +1,7 @@
 {
   "extends": "./base",
-  "exclude": ["../src/**/*.test.ts"]
+  "exclude": ["../src/**/*.test.ts"],
+  "compilerOptions": {
+    "declaration": true
+  }
 }

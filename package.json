@@ -1,17 +1,19 @@
 {
   "name": "@matt-tingen/util",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "repository": "git@github.com:matt-tingen/util.git",
   "author": "Matt Tingen <matt.tingen@gmail.com>",
   "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "yarn clean && tsc -p config/dist.json",
     "build-test": "yarn clean && tsc -p config/test.json",
-    "test": "yarn build-test && ava"
+    "test": "yarn build-test && ava",
+    "prepare": "yarn build"
   },
-  "dependencies": {
+  "devDependencies": {
     "ava": "^0.25.0",
-    "typescript": "^2.8.1"
+    "typescript": "^3.0.1"
   }
 }
