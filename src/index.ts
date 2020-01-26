@@ -1,23 +1,23 @@
-import countBy from './countBy'
-export { default as countBy } from './countBy'
+import countBy from './countBy';
+export { default as countBy } from './countBy';
 
-import flattenDeep from './flattenDeep'
-export { default as flattenDeep } from './flattenDeep'
+import flattenDeep from './flattenDeep';
+export { default as flattenDeep } from './flattenDeep';
 
-import identity from './identity'
-export { default as identity } from './identity'
+import identity from './identity';
+export { default as identity } from './identity';
 
-import mapToObject from './mapToObject'
-export { default as mapToObject } from './mapToObject'
+import mapToObject from './mapToObject';
+export { default as mapToObject } from './mapToObject';
 
-import random from './random'
-export { default as random } from './random'
+import random from './random';
+export { default as random } from './random';
 
-import randomInt from './randomInt'
-export { default as randomInt } from './randomInt'
+import randomInt from './randomInt';
+export { default as randomInt } from './randomInt';
 
-import repeat from './repeat'
-export { default as repeat } from './repeat'
+import repeat from './repeat';
+export { default as repeat } from './repeat';
 
 export default {
   countBy,
@@ -27,4 +27,4 @@ export default {
   random,
   randomInt,
   repeat,
-}
+};

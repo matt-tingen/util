@@ -7,7 +7,7 @@ const testRange: Macro<TestContext> = (
   t: TestContext,
   min: number | null,
   max: number,
-  expected: number[]
+  expected: number[],
 ) => {
   let omitMin = false;
 

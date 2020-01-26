@@ -1,5 +1,5 @@
-import test, { Macro, TestContext } from 'ava'
-import countBy from './countBy'
+import test, { Macro, TestContext } from 'ava';
+import countBy from './countBy';
 
 const testCountBy: Macro<TestContext> = <T>(
   t: TestContext,
@@ -7,11 +7,11 @@ const testCountBy: Macro<TestContext> = <T>(
   iteree: (value: T) => any,
   expected: ReturnType<typeof countBy>,
 ) => {
-  t.deepEqual(countBy(values, iteree), expected)
-}
-testCountBy.title = providedTitle => `countBy handles ${providedTitle}`
+  t.deepEqual(countBy(values, iteree), expected);
+};
+testCountBy.title = providedTitle => `countBy handles ${providedTitle}`;
 
-test('empty array', testCountBy, [], undefined, {})
+test('empty array', testCountBy, [], undefined, {});
 test(
   'string => string',
   testCountBy,
@@ -21,7 +21,7 @@ test(
     a: 2,
     b: 1,
   },
-)
+);
 test(
   'string => number',
   testCountBy,
@@ -32,7 +32,7 @@ test(
     1: 2,
     3: 1,
   },
-)
+);
 test(
   'number => boolean',
   testCountBy,
@@ -42,4 +42,4 @@ test(
     false: 1,
     true: 3,
   },
-)
+);

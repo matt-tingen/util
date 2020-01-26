@@ -5,7 +5,7 @@ const testMapToObject: Macro<TestContext> = <T, V>(
   t: TestContext,
   values: T[],
   iteree: (value: T) => [any, V],
-  expected: ReturnType<typeof mapToObject>
+  expected: ReturnType<typeof mapToObject>,
 ) => {
   t.deepEqual(mapToObject(values, iteree), expected);
 };
@@ -20,7 +20,7 @@ test(
     1: 1,
     2: 2,
     3: 3,
-  }
+  },
 );
 test(
   'index',
@@ -31,5 +31,5 @@ test(
     0: 1,
     1: 2,
     2: 3,
-  }
+  },
 );

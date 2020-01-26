@@ -6,7 +6,7 @@ const REPEATS = 1000;
 const testRandom: Macro<TestContext> = (
   t: TestContext,
   min: number | null,
-  max: number
+  max: number,
 ) => {
   let omitMin = false;
 
