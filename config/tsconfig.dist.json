@@ -1,5 +1,5 @@
 {
-  "extends": "./base",
+  "extends": "../tsconfig",
   "exclude": ["../src/**/*.test.ts"],
   "compilerOptions": {
     "declaration": true

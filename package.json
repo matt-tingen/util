@@ -7,8 +7,8 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "yarn clean && tsc -p config/dist.json",
-    "build-test": "yarn clean && tsc -p config/test.json",
+    "build": "yarn clean && tsc -p config/tsconfig.dist.json",
+    "build-test": "yarn clean && tsc -p config/tsconfig.test.json",
     "test": "yarn build-test && ava",
     "prepare": "yarn build"
   },
