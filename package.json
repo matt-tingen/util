@@ -10,11 +10,12 @@
     "build": "yarn clean && tsc -p config/tsconfig.dist.json",
     "build-test": "yarn clean && tsc -p config/tsconfig.test.json",
     "test": "yarn build-test && ava",
+    "ts": "yarn tsc --noEmit",
     "prepare": "yarn build"
   },
   "devDependencies": {
     "ava": "^0.25.0",
     "prettier": "^1.19.1",
-    "typescript": "^3.7.5"
+    "typescript": "^4.3.2"
   }
 }
