@@ -8,7 +8,8 @@ const testFlattenDeep: Macro<TestContext> = <T>(
 ) => {
   t.deepEqual(flattenDeep(values), expected);
 };
-testFlattenDeep.title = providedTitle => `flattenDeep handles ${providedTitle}`;
+testFlattenDeep.title = (providedTitle) =>
+  `flattenDeep handles ${providedTitle}`;
 
 test('empty array', testFlattenDeep, [], []);
 test('flat array', testFlattenDeep, [1, 2, 3], [1, 2, 3]);

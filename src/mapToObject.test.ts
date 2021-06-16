@@ -9,7 +9,8 @@ const testMapToObject: Macro<TestContext> = <T, V>(
 ) => {
   t.deepEqual(mapToObject(values, iteree), expected);
 };
-testMapToObject.title = providedTitle => `mapToObject handles ${providedTitle}`;
+testMapToObject.title = (providedTitle) =>
+  `mapToObject handles ${providedTitle}`;
 
 test(
   'identity',

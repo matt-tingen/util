@@ -9,7 +9,7 @@ const testRepeat: Macro<TestContext> = (
 ) => {
   t.deepEqual(repeat(value, numRepeats), expected);
 };
-testRepeat.title = providedTitle => `repeat handles ${providedTitle}`;
+testRepeat.title = (providedTitle) => `repeat handles ${providedTitle}`;
 
 test('zero items', testRepeat, 'test', 0, []);
 test('string', testRepeat, 'a', 2, ['a', 'a']);

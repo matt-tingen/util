@@ -9,7 +9,7 @@ const testCountBy: Macro<TestContext> = <T>(
 ) => {
   t.deepEqual(countBy(values, iteree), expected);
 };
-testCountBy.title = providedTitle => `countBy handles ${providedTitle}`;
+testCountBy.title = (providedTitle) => `countBy handles ${providedTitle}`;
 
 test('empty array', testCountBy, [], undefined, {});
 test(
