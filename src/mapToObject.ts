@@ -1,12 +1,14 @@
-function mapToObject<T, V>(
+import { AnyKey } from './types';
+
+function mapToObject<T, V, K extends AnyKey>(
   items: T[],
-  iteree: (item: T) => [any, V],
-): { [k: string]: V } {
+  iteree: (item: T) => [K, V],
+): Record<K, V> {
   const pairs = items.map(iteree);
-  const result: { [k: string]: V } = {};
+  const result = {} as Record<K, V>;
 
   pairs.forEach(([key, value]) => {
-    result[key.toString()] = value;
+    result[key] = value;
   });
 
   return result;
