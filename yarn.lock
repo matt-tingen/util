@@ -1269,10 +1269,10 @@
     eslint-plugin-react-hooks "^4.3.0"
     eslint-plugin-testing-library "^5.0.1"
 
-"@matt-tingen/jest-macros@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@matt-tingen/jest-macros/-/jest-macros-0.1.3.tgz#fcb650011ef6b68853e8ae121c04e42888053c94"
-  integrity sha512-YFLO/PwVG/iM0il3xGI1I++IBSG7EVUgx3RbwYfD+PS8jkQ6m1QebTW+ZVlgGTyZH2Tt6JzI0IMi02xWpcljHw==
+"@matt-tingen/jest-macros@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@matt-tingen/jest-macros/-/jest-macros-0.1.4.tgz#ad70a8a4c4944c6e172925676f5412f1a8d379ce"
+  integrity sha512-QSxagIx9dCta/zu9jOhsyRJhQHTWOTSReGA3x8orQleyhv+GahI7LlmImNRsWzGH1wmIDs5v3QY3RB9vvoiTiQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
