@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "target": "es6",
+    "target": "ESNext",
     "removeComments": true,
     "strict": true,
     "noImplicitAny": true,
@@ -10,5 +11,5 @@
     "sourceMap": true,
     "outDir": "dist"
   },
-  "include": ["src", "jest.setup.ts"]
+  "include": ["src"]
 }
