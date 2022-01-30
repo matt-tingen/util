@@ -11,5 +11,6 @@ module.exports = {
   },
   rules: {
     'jest/no-standalone-expect': 'off', // Doesn't work with jest-macros
+    '@typescript-eslint/explicit-module-boundary-types': 'error',
   },
 };

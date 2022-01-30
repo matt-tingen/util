@@ -1,1 +1,1 @@
-export const expectType = <T>(value: T) => value;
+export const expectType = <T>(value: T): T => value;
