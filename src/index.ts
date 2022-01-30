@@ -1,11 +1,11 @@
-export { mapToObject } from './mapToObject';
-export { isTruthy } from './isTruthy';
-export { expectType } from './expectType';
-export { tryWithDefault } from './tryWithDefault';
-export { typedKeys } from './typedKeys';
-export { typedEntries } from './typedEntries';
 export { asDefault } from './asDefault';
-export { repeat } from './repeat';
+export { expectType } from './expectType';
+export { isTruthy } from './isTruthy';
+export { mapToObject } from './mapToObject';
 export { memoOne } from './memoOne';
+export { repeat } from './repeat';
+export { tryWithDefault } from './tryWithDefault';
+export { typedEntries } from './typedEntries';
+export { typedKeys } from './typedKeys';
 
 export * from './types';
