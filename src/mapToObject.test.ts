@@ -1,4 +1,4 @@
-import mapToObject from './mapToObject';
+import { mapToObject } from './mapToObject';
 
 describe('mapToObject', () => {
   it('handles identity', () => {

@@ -1,6 +1,6 @@
 import { AnyKey } from './types';
 
-function mapToObject<T, V, K extends AnyKey>(
+export function mapToObject<T, V, K extends AnyKey>(
   items: T[],
   iteree: (item: T, index: number) => [K, V],
 ): Record<K, V> {
@@ -13,5 +13,3 @@ function mapToObject<T, V, K extends AnyKey>(
 
   return result;
 }
-
-export default mapToObject;
