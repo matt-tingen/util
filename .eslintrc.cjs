@@ -9,4 +9,7 @@ module.exports = {
       version: 27,
     },
   },
+  rules: {
+    'jest/no-standalone-expect': 'off', // Doesn't work with jest-macros
+  },
 };
