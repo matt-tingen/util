@@ -1,5 +1,12 @@
 import { AnyKey } from './types';
 
+/**
+ * Maps an array of items to an object.
+ *
+ * @param items
+ * @param iteree An iteree which returns an entry pair
+ * @returns An object composed of the created entries
+ */
 export function mapToObject<T, V, K extends AnyKey>(
   items: T[],
   iteree: (item: T, index: number) => [K, V],
