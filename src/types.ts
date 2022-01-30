@@ -14,3 +14,5 @@ export type SomePartial<T, K extends keyof T> = Omit<T, K> &
   Partial<Pick<T, K>>;
 
 export type ArrayElement<T extends readonly unknown[]> = T[number];
+
+export type Comparator<T> = (a: T, b: T) => boolean;
