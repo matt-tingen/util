@@ -10,5 +10,5 @@
     "sourceMap": true,
     "outDir": "dist"
   },
-  "include": ["src/**/*", "src/types.d.ts"]
+  "include": ["src", "jest.setup.ts"]
 }

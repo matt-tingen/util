@@ -1,36 +1,19 @@
-import test, { Macro, TestContext } from 'ava';
 import mapToObject from './mapToObject';
 
-const testMapToObject: Macro<TestContext> = <T, V>(
-  t: TestContext,
-  values: T[],
-  iteree: (value: T) => [any, V],
-  expected: ReturnType<typeof mapToObject>,
-) => {
-  t.deepEqual(mapToObject(values, iteree), expected);
-};
-testMapToObject.title = (providedTitle) =>
-  `mapToObject handles ${providedTitle}`;
+describe('mapToObject', () => {
+  it('handles identity', () => {
+    expect(mapToObject([1, 2, 3], (value) => [value, value])).toEqual({
+      1: 1,
+      2: 2,
+      3: 3,
+    });
+  });
 
-test(
-  'identity',
-  testMapToObject,
-  [1, 2, 3],
-  (value: number) => [value, value],
-  {
-    1: 1,
-    2: 2,
-    3: 3,
-  },
-);
-test(
-  'index',
-  testMapToObject,
-  [1, 2, 3],
-  (value: number, i: number) => [i, value],
-  {
-    0: 1,
-    1: 2,
-    2: 3,
-  },
-);
+  it('handles index', () => {
+    expect(mapToObject([1, 2, 3], (value, i) => [i, value])).toEqual({
+      0: 1,
+      1: 2,
+      2: 3,
+    });
+  });
+});

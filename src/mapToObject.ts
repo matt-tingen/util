@@ -2,7 +2,7 @@ import { AnyKey } from './types';
 
 function mapToObject<T, V, K extends AnyKey>(
   items: T[],
-  iteree: (item: T) => [K, V],
+  iteree: (item: T, index: number) => [K, V],
 ): Record<K, V> {
   const pairs = items.map(iteree);
   const result = {} as Record<K, V>;
