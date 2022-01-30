@@ -1,5 +1,6 @@
 export { asDefault } from './asDefault';
 export { assert } from './assert';
+export { chunkBy } from './chunkBy';
 export { expectType } from './expectType';
 export { isTruthy } from './isTruthy';
 export { mapToObject } from './mapToObject';
