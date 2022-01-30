@@ -31,7 +31,7 @@
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
-    "@matt-tingen/eslint-config": "^0.4.1",
+    "@matt-tingen/eslint-config": "^0.4.2",
     "@matt-tingen/jest-macros": "^0.1.4",
     "@types/jest": "^27.4.0",
     "babel-jest": "^27.4.6",
