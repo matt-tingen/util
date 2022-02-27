@@ -9,5 +9,6 @@ export { repeat } from './repeat';
 export { tryWithDefault } from './tryWithDefault';
 export { typedEntries } from './typedEntries';
 export { typedKeys } from './typedKeys';
+export { mod } from './mod';
 
 export * from './types';
