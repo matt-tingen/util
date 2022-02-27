@@ -1,6 +1,7 @@
 /**
- * Ensures a value conforms to a given type.
+ * Ensures a value conforms to--and widens its type to--a given type.
  *
+ * @deprecated See `verifyType`
  * @param value
  * @returns the provided value
  */
