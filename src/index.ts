@@ -3,7 +3,6 @@ export { assert } from './assert';
 export { assertNever } from './assertNever';
 export { chunkBy } from './chunkBy';
 export { expectType } from './expectType';
-export { verifyType } from './verifyType';
 export { isTruthy } from './isTruthy';
 export { isNonNullish } from './isNonNullish';
 export { mapToObject } from './mapToObject';
