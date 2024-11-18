@@ -14,5 +14,6 @@ export { typedKeys } from './typedKeys';
 export { filterEntries } from './filterEntries';
 export { mapValues } from './mapValues';
 export { mod } from './mod';
+export { DefaultMap } from './DefaultMap';
 
 export * from './types';
