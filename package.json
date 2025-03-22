@@ -21,10 +21,10 @@
     "build": "tsup src/index.ts --clean --dts --format esm,cjs",
     "format": "prettier --write src",
     "lint": "eslint --ext .ts,.tsx src",
-    "preversion": "pnpm ts && pnpm lint && pnpm test && pnpm build",
-    "postversion": "pnpm publish && git push",
     "test": "jest",
-    "ts": "pnpm tsc --noEmit"
+    "ts": "pnpm tsc --noEmit",
+    "preversion": "pnpm ts && pnpm lint && pnpm test && pnpm build",
+    "postversion": "pnpm publish && git push && git push --tags"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
