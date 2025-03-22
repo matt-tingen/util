@@ -26,19 +26,18 @@
     "ts": "pnpm tsc --noEmit"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-typescript": "^7.26.0",
     "@matt-tingen/eslint-config": "^0.12.0",
     "@matt-tingen/jest-macros": "^0.1.4",
-    "@types/jest": "^27.4.0",
-    "babel-jest": "^27.4.6",
+    "@types/jest": "^29.5.14",
+    "babel-jest": "^29.7.0",
     "eslint": "^9.23.0",
-    "jest": "^27.4.7",
+    "jest": "^29.7.0",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.10",
     "tsup": "^8.4.0",
-    "typescript": "^4.5.5"
+    "typescript": "^5.8.2"
   }
 }
-
