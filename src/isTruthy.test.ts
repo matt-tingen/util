@@ -4,6 +4,7 @@ const testIsTruthy = createMacro(
   (value: unknown, expected: boolean) => {
     expect(isTruthy(value)).toBe(expected);
   },
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
   (hint, value, expected) => `${value} is ${expected ? 'truthy' : 'falsy'}`,
 );
 
@@ -12,7 +13,7 @@ run(testIsTruthy, '', false);
 run(testIsTruthy, undefined, false);
 run(testIsTruthy, null, false);
 run(testIsTruthy, false, false);
-run(testIsTruthy, NaN, false);
+run(testIsTruthy, Number.NaN, false);
 
 run('empty array', testIsTruthy, [], true);
 run('empty object', testIsTruthy, {}, true);

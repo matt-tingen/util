@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-types
-export const filterEntries = <T extends {}>(
+export const filterEntries = <T extends object>(
   collection: T,
   iteree: (value: T[keyof T], key: keyof T) => boolean,
 ): Partial<T> =>

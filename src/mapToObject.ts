@@ -7,10 +7,10 @@ import { AnyKey } from './types';
  * @param iteree An iteree which returns an entry pair
  * @returns An object composed of the created entries
  */
-export function mapToObject<T, V, K extends AnyKey>(
+export const mapToObject = <T, V, K extends AnyKey>(
   items: T[],
   iteree: (item: T, index: number) => [K, V],
-): Record<K, V> {
+): Record<K, V> => {
   const pairs = items.map(iteree);
   const result = {} as Record<K, V>;
 
@@ -19,4 +19,4 @@ export function mapToObject<T, V, K extends AnyKey>(
   });
 
   return result;
-}
+};

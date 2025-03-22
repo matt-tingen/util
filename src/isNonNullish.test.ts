@@ -4,6 +4,7 @@ const testIsNonNullish = createMacro(
   (value: unknown, expected: boolean) => {
     expect(isNonNullish(value)).toBe(expected);
   },
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
   (hint, value, expected) => `${value} is ${expected ? 'truthy' : 'falsy'}`,
 );
 
@@ -12,7 +13,7 @@ run(testIsNonNullish, '', true);
 run(testIsNonNullish, undefined, false);
 run(testIsNonNullish, null, false);
 run(testIsNonNullish, false, true);
-run(testIsNonNullish, NaN, true);
+run(testIsNonNullish, Number.NaN, true);
 
 run('empty array', testIsNonNullish, [], true);
 run('empty object', testIsNonNullish, {}, true);

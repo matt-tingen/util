@@ -16,3 +16,5 @@ export type SomePartial<T, K extends keyof T> = Omit<T, K> &
 export type ArrayElement<T extends readonly unknown[]> = T[number];
 
 export type Comparator<T> = (a: T, b: T) => boolean;
+
+export type NonFunction<T> = T extends AnyFunction ? never : T;

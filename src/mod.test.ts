@@ -8,9 +8,9 @@ const testMod = createMacro(
     hint || `${dividend} mod ${divisor} = ${expected}`,
 );
 
-run(testMod, 0, 0, NaN);
-run(testMod, 1, 0, NaN);
-run(testMod, -1, 0, NaN);
+run(testMod, 0, 0, Number.NaN);
+run(testMod, 1, 0, Number.NaN);
+run(testMod, -1, 0, Number.NaN);
 
 run(testMod, 0, 1, 0);
 run(testMod, 0, -1, 0);

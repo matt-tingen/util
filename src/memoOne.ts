@@ -27,7 +27,7 @@ const defaultComparator: Comparator<unknown[]> = (a, b) =>
  */
 export const memoOne = <F extends AnyFunction>(
   fn: F,
-  compareParams: Comparator<Parameters<F>> = defaultComparator,
+  compareParams: Comparator<Parameters<F>> = defaultComparator
 ): ((...args: Parameters<F>) => ReturnType<F>) => {
   let lastArgs: Parameters<F>;
   let lastReturn: ReturnType<F>;

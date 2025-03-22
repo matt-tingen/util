@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-types
-export const mapValues = <T extends {}, V>(
+export const mapValues = <T extends object, V>(
   object: T,
   iteree: (value: T[keyof T], key: keyof T) => V,
 ): Record<keyof T, V> => {

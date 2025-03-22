@@ -11,7 +11,7 @@ it("returns the getter's value", () => {
 it('returns the default value when the getter throws', () => {
   const defaultValue = {};
   const getter = jest.fn(() => {
-    throw new Error();
+    throw new Error('oh oh');
   });
 
   expect(tryWithDefault(getter, defaultValue)).toBe(defaultValue);

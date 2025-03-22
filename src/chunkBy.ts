@@ -27,7 +27,7 @@ export const chunkBy = <T>(items: T[], iteree: (item: T) => unknown): T[][] => {
       chunkValue = value;
     }
 
-    const chunk = chunks[chunks.length - 1];
+    const chunk = chunks.at(-1)!;
 
     chunk.push(item);
   });
