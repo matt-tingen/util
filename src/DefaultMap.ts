@@ -1,5 +1,8 @@
 export class DefaultMap<K, T> extends Map<K, T> {
-  constructor(private defaultGetter: (key: K) => T, items?: readonly [K, T][]) {
+  constructor(
+    private defaultGetter: (key: K) => T,
+    items?: readonly [K, T][],
+  ) {
     super(items);
   }
 
