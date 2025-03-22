@@ -21,7 +21,8 @@
     "build": "tsup src/index.ts --clean --dts --format esm,cjs",
     "format": "prettier --write src",
     "lint": "eslint --ext .ts,.tsx src",
-    "prepack": "pnpm ts && pnpm lint && pnpm test && pnpm build",
+    "preversion": "pnpm ts && pnpm lint && pnpm test && pnpm build",
+    "postversion": "pnpm publish && git push",
     "test": "jest",
     "ts": "pnpm tsc --noEmit"
   },
