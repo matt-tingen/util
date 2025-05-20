@@ -8,6 +8,7 @@
     "strict": true,
     "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
+    "erasableSyntaxOnly": true,
     "sourceMap": true,
     "outDir": "dist"
   },
