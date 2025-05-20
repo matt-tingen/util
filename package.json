@@ -23,10 +23,12 @@
     "lint": "eslint --ext .ts,.tsx src",
     "test": "jest",
     "ts": "pnpm tsc --noEmit",
-    "preversion": "pnpm ts && pnpm lint && pnpm test && pnpm build",
+    "verify": "attw --pack .",
+    "preversion": "pnpm ts && pnpm lint && pnpm test && pnpm build && pnpm verify",
     "postversion": "pnpm publish && git push && git push --tags"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.1",
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-typescript": "^7.26.0",
@@ -42,4 +44,3 @@
     "typescript": "^5.8.2"
   }
 }
-
