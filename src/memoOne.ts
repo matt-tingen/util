@@ -1,7 +1,6 @@
-import { AnyFunction, Comparator } from './types';
-
-const defaultComparator: Comparator<unknown[]> = (a, b) =>
-  a.length === b.length && a.every((value, i) => Object.is(value, b[i]));
+import { SingleEntryCache } from './caches/SingleEntryCache';
+import { memoize } from './memoize';
+import { AnyFunction, Comparator, ExtractFunction } from './types';
 
 /**
  * Memoizes the provided function, caching only the latest return value.
@@ -27,17 +26,5 @@ const defaultComparator: Comparator<unknown[]> = (a, b) =>
  */
 export const memoOne = <F extends AnyFunction>(
   fn: F,
-  compareParams: Comparator<Parameters<F>> = defaultComparator
-): ((...args: Parameters<F>) => ReturnType<F>) => {
-  let lastArgs: Parameters<F>;
-  let lastReturn: ReturnType<F>;
-
-  return (...args: Parameters<F>) => {
-    if (!lastArgs || !compareParams(args, lastArgs)) {
-      lastArgs = args;
-      lastReturn = fn(...args) as ReturnType<F>;
-    }
-
-    return lastReturn;
-  };
-};
+  compareParams?: Comparator<Parameters<F>>,
+): ExtractFunction<F> => memoize(fn, new SingleEntryCache(compareParams));

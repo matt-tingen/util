@@ -26,6 +26,9 @@ importers:
       '@matt-tingen/jest-macros':
         specifier: ^0.1.4
         version: 0.1.4
+      '@tanstack/query-core':
+        specifier: ^5.80.7
+        version: 5.80.7
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -1146,6 +1149,9 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=9.0.0'
+
+  '@tanstack/query-core@5.80.7':
+    resolution: {integrity: sha512-s09l5zeUKC8q7DCCCIkVSns8zZrK4ZDT6ryEjxNBFi68G4z2EBobBS7rdOY3r6W1WbUDpc1fe5oY+YO/+2UVUg==}
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -4746,6 +4752,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@tanstack/query-core@5.80.7': {}
 
   '@tybys/wasm-util@0.9.0':
     dependencies:

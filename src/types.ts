@@ -5,6 +5,10 @@ export type AnyKey = keyof never;
 export type AnyObject = Record<AnyKey, unknown>;
 export type AnyFunction = (...args: never[]) => unknown;
 
+export type ExtractFunction<F extends AnyFunction> = (
+  ...args: Parameters<F>
+) => ReturnType<F>;
+
 export type MaybePromise<T> = T | Promise<T>;
 export type MaybeArray<T> = T | T[];
 export type MaybeFalsy<T> = T | Falsy;
