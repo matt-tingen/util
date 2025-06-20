@@ -19,9 +19,6 @@ export { DefaultMap } from './DefaultMap';
 
 export { FirstArgIdentityCache } from './caches/FirstArgIdentityCache';
 export { SingleEntryCache } from './caches/SingleEntryCache';
-export {
-  QueryClient as TanstackQueryClient,
-  type QueryClient,
-} from './caches/QueryClientCache';
+export { QueryClientCache, type QueryClient } from './caches/QueryClientCache';
 
 export * from './types';
